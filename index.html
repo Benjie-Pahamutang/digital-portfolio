@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Benjie B. Pahamutang - Senior Software Developer & Systems Engineer specializing in Full-Stack Web Development, IoT Integration, and Artificial Intelligence Solutions.">
+  <meta name="keywords" content="Benjie Pahamutang, Software Developer, Full-Stack Developer, Web Development, Python, IoT, Portfolio, Tech Lead">
+  <meta name="author" content="Benjie B. Pahamutang">
+  
+  <!-- Open Graph / Social Media Meta Tags -->
+  <meta property="og:title" content="BENJIE B. PAHAMUTANG | Tech Portfolio">
+  <meta property="og:description" content="Software Developer & Tech Enthusiast building scalable applications and hardware integration systems.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://benjiepahamutang.dev">
+  <meta property="og:image" content="myphoto.jpg">
+
+  <title>BENJIE B. PAHAMUTANG | Senior Software Developer & Systems Architect</title>
+  
+  <!-- CSS Stylesheets -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- Animated Interactive Canvas Background -->
+  <canvas id="bg-particles"></canvas>
+
+  <!-- Scroll Progress Indicator Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="progressBar"></div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar" id="navbar">
+    <a href="#home" class="nav-logo">
+      <span class="logo-code">&lt;</span>BENJIE B. PAHAMUTANG<span class="logo-code">&nbsp;/&gt;</span>
+      <span class="accent">| Dev</span>
+    </a>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home" class="nav-item active"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about" class="nav-item"><i class="fas fa-user"></i> About</a></li>
+      <li><a href="#skills" class="nav-item"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="#projects" class="nav-item"><i class="fas fa-laptop-code"></i> Projects</a></li>
+      <li><a href="#experience" class="nav-item"><i class="fas fa-briefcase"></i> Experience</a></li>
+      <li><a href="#education" class="nav-item"><i class="fas fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#certificates" class="nav-item"><i class="fas fa-certificate"></i> Certs</a></li>
+      <li><a href="#contact" class="nav-item"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+
+    <div class="nav-controls">
+      <button id="themeToggle" class="theme-toggle-btn" aria-label="Toggle dark/light mode">
+        <i class="fas fa-moon"></i>
+      </button>
+      <div class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-container">
+      <div class="hero-image-wrapper">
+        <div class="image-glow-ring"></div>
+        <img src="myphoto.jpg" alt="Benjie B. Pahamutang Profile Photo" class="hero-img">
+        <div class="status-badge">
+          <span class="pulse-dot"></span> Available for Hire
+        </div>
+      </div>
+
+      <div class="hero-text">
+        <span class="badge"><i class="fas fa-terminal"></i> Welcome to my Interactive Portal</span>
+        <h1>Hi, I'm <span class="highlight typing-text" id="typingEffect"></span><span class="cursor">&nbsp;</span></h1>
+        <p class="hero-subtitle">Software Developer, Embedded Systems Specialist & UI/UX Designer</p>
+        <p class="hero-bio">
+          I craft robust web architectures, high-efficiency hardware-software interfaces (Arduino/Raspberry Pi), real-time POS solutions, and artificial intelligence-driven platforms tailored for business scalability.
+        </p>
+
+        <!-- Dynamic Counter Stats -->
+        <div class="hero-stats">
+          <div class="stat-item">
+            <h3 class="counter" data-target="15">0</h3>
+            <p>Completed Projects</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter" data-target="99">0</h3>
+            <p>% Code Efficiency</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="counter" data-target="1000">0</h3>
+            <p>Commits & Upgrades</p>
+          </div>
+        </div>
+
+        <div class="hero-buttons">
+          <a href="#contact" class="btn btn-primary"><i class="fas fa-paper-plane"></i> Get In Touch</a>
+          <a href="resume.pdf" download="Benjie_Pahamutang_Resume.pdf" class="btn btn-secondary"><i class="fas fa-download"></i> Download CV</a>
+          <a href="#projects" class="btn btn-outline"><i class="fas fa-eye"></i> View Work</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section id="about" class="section reveal">
+    <h2 class="section-title">About Me</h2>
+    <p class="section-subtitle">Driven by Logic, Fueled by Innovation</p>
+    
+    <div class="about-grid">
+      <div class="about-card">
+        <div class="card-icon"><i class="fas fa-microchip"></i></div>
+        <h3>Hardware & Software Convergence</h3>
+        <p>Expertise in bridging high-level languages like Python and JavaScript with microcontroller logic, enabling automated smart hardware platforms.</p>
+      </div>
+
+      <div class="about-card">
+        <div class="card-icon"><i class="fas fa-layer-group"></i></div>
+        <h3>Full-Stack Solutions</h3>
+        <p>Building resilient, secure, and intuitive web platforms using modern HTML5, CSS3, ES6 JavaScript, Python backends, and relational databases.</p>
+      </div>
+
+      <div class="about-card">
+        <div class="card-icon"><i class="fas fa-brain"></i></div>
+        <h3>AI & Analytics</h3>
+        <p>Incorporating intelligent automation algorithms, computer vision pipelines, and predictive analytics into business productivity software.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills & Expertise Section -->
+  <section id="skills" class="section reveal">
+    <h2 class="section-title">Skills & Technical Stack</h2>
+    <p class="section-subtitle">Core competencies and language masteries</p>
+
+    <!-- Skill Filter Controls -->
+    <div class="skill-filter-btns">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="languages">Languages</button>
+      <button class="filter-btn" data-filter="hardware">Hardware/IoT</button>
+      <button class="filter-btn" data-filter="web">Web Tech</button>
+      <button class="filter-btn" data-filter="tools">Tools & DB</button>
+    </div>
+
+    <div class="skills-grid" id="skillsGrid">
+      <div class="skill-tag-card" data-category="languages">
+        <div class="skill-header"><i class="fab fa-python skill-icon"></i> <span>Python</span> <span class="skill-pct">92%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 92%;"></div></div>
+      </div>
+
+      <div class="skill-tag-card" data-category="web">
+        <div class="skill-header"><i class="fab fa-html5 skill-icon"></i> <span>HTML5 / CSS3</span> <span class="skill-pct">95%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 95%;"></div></div>
+      </div>
+
+      <div class="skill-tag-card" data-category="web">
+        <div class="skill-header"><i class="fab fa-js-square skill-icon"></i> <span>JavaScript (ES6+)</span> <span class="skill-pct">88%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 88%;"></div></div>
+      </div>
+
+      <div class="skill-tag-card" data-category="hardware">
+        <div class="skill-header"><i class="fas fa-robot skill-icon"></i> <span>Arduino & Embedded Tech</span> <span class="skill-pct">85%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 85%;"></div></div>
+      </div>
+
+      <div class="skill-tag-card" data-category="web">
+        <div class="skill-header"><i class="fas fa-paint-brush skill-icon"></i> <span>UI / UX Design</span> <span class="skill-pct">90%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 90%;"></div></div>
+      </div>
+
+      <div class="skill-tag-card" data-category="tools">
+        <div class="skill-header"><i class="fas fa-database skill-icon"></i> <span>MySQL & SQL Systems</span> <span class="skill-pct">87%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 87%;"></div></div>
+      </div>
+
+      <div class="skill-tag-card" data-category="tools">
+        <div class="skill-header"><i class="fab fa-git-alt skill-icon"></i> <span>Git & Version Control</span> <span class="skill-pct">89%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 89%;"></div></div>
+      </div>
+
+      <div class="skill-tag-card" data-category="web">
+        <div class="skill-header"><i class="fas fa-network-wired skill-icon"></i> <span>RESTful APIs & Sockets</span> <span class="skill-pct">84%</span></div>
+        <div class="skill-bar-bg"><div class="skill-bar-fill" style="width: 84%;"></div></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section reveal">
+    <h2 class="section-title">Featured Projects</h2>
+    <p class="section-subtitle">Real-world applications built with precision</p>
+    
+    <div class="projects-grid">
+      
+      <!-- Project 1 -->
+      <div class="project-card">
+        <div class="project-img-box">
+          <img src="queueing.png" alt="Queueing System Interface">
+          <div class="project-overlay">
+            <a href="https://www.tiktok.com/@ezclothingz/video/7680185831625231637" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/Benjie-Pahamutang/campus-queue-hub" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i class="fab fa-github"></i> Code Source</a>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3>Automated Queueing System</h3>
+            <span class="project-date">2025</span>
+          </div>
+          <p>Real-time customer flow control system featuring automated token generation, audio announcement system, administrative portal, and multi-display monitor synchronization.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>SQLite/MySQL</span>
+            <span>WebSockets</span>
+            <span>GUI</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 2 -->
+      <div class="project-card">
+        <div class="project-img-box">
+          <img src="pos.png" alt="Teamtea POS Interface">
+          <div class="project-overlay">
+            <a href="https://www.tiktok.com/@ezclothingz/video/7696534273876118785" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/Benjie-Pahamutang/temptea-pos" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i class="fab fa-github"></i> Code Source</a>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3>Teamtea Point-of-Sale Platform</h3>
+            <span class="project-date">2025</span>
+          </div>
+          <p>Commercial POS management suite built for food & beverage businesses. Features custom ingredient modifier setup, sales analytics, receipt printer integrations, and inventory control.</p>
+          <div class="project-tags">
+            <span>JavaScript</span>
+            <span>HTML5/CSS3</span>
+            <span>Local Storage</span>
+            <span>Chart.js</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="project-card">
+        <div class="project-img-box">
+          <img src="fitness.png" alt="AI Fitness Coach Interface">
+          <div class="project-overlay">
+            <a href="https://www.tiktok.com/@ezclothingz/video/7696538072158194964" class="overlay-btn"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+            <a href="https://github.com/Benjie-Pahamutang/benjie-ai-fitness" target="_blank" rel="noopener noreferrer" class="overlay-btn"><i class="fab fa-github"></i> Code Source</a>
+          </div>
+        </div>
+        <div class="project-content">
+          <div class="project-header">
+            <h3>AI Interactive Fitness Coach</h3>
+            <span class="project-date">2026</span>
+          </div>
+          <p>Computer-vision assisted workout tracker that processes real-time webcam feeds, detects body keypoints for posture correction, logs rep counts, and delivers performance metrics.</p>
+          <div class="project-tags">
+            <span>Python</span>
+            <span>OpenCV</span>
+            <span>MediaPipe</span>
+            <span>AI / ML</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Experience Timeline Section -->
+  <section id="experience" class="section reveal">
+    <h2 class="section-title">Career Timeline & Journey</h2>
+    <p class="section-subtitle">My professional milestones and background</p>
+
+    <div class="timeline">
+      <div class="timeline-item left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Lead Developer & Systems Architect</h3>
+          <span class="timeline-date">2025 - Present</span>
+          <p>Designing full-stack business solutions, creating custom enterprise tools, and integrating hardware modules for client automation projects.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>IoT & Hardware Integrator</h3>
+          <span class="timeline-date">2024 - 2025</span>
+          <p>Engineered microcontroller-driven systems using Arduino and ESP32 chips, interfacing sensors with central dashboard software.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <h3>Freelance Web & Software Specialist</h3>
+          <span class="timeline-date">2023 - 2024</span>
+          <p>Delivered customized desktop utilities, database interfaces, and modern portfolio platforms for various clients and regional projects.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section reveal">
+    <h2 class="section-title">Education</h2>
+    <p class="section-subtitle">Academic foundations and background</p>
+    <div class="info-card featured-card">
+      <div class="card-badge"><i class="fas fa-university"></i> Academic Program</div>
+      <h3>Bachelor of Science in Information Technology / Computer Science</h3>
+      <p class="institution">University / College Institute</p>
+      <p class="duration"><i class="fas fa-calendar-alt"></i> 2022 — Present</p>
+      <p class="card-desc">Specialized Focus: Object-Oriented Software Design, Advanced Database Management, Embedded Hardware Architecture, Operating Systems, Algorithm Analysis, & Human-Computer Interaction.</p>
+    </div>
+  </section>
+
+  <!-- Certificates Section -->
+  <section id="certificates" class="section reveal">
+    <h2 class="section-title">Certificates & Training</h2>
+    <p class="section-subtitle">Verified proficiencies and industry learning</p>
+    <div class="cert-grid">
+      <div class="info-card cert-card">
+        <div class="cert-icon"><i class="fab fa-python"></i></div>
+        <h3>Professional Python Developer</h3>
+        <p class="institution">Global Tech Academy / Certification Authority</p>
+        <span class="duration"><i class="fas fa-check-circle"></i> Issued 2025</span>
+      </div>
+
+      <div class="info-card cert-card">
+        <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+        <h3>Arduino & IoT Embedded Systems Workshop</h3>
+        <p class="institution">Robotics & Tech Community Forum</p>
+        <span class="duration"><i class="fas fa-check-circle"></i> Issued 2024</span>
+      </div>
+
+      <div class="info-card cert-card">
+        <div class="cert-icon"><i class="fas fa-code"></i></div>
+        <h3>Full-Stack Web Development Mastery</h3>
+        <p class="institution">Online Interactive Coding Alliance</p>
+        <span class="duration"><i class="fas fa-check-circle"></i> Issued 2024</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements Section -->
+  <section id="achievements" class="section reveal">
+    <h2 class="section-title">Achievements & Honors</h2>
+    <p class="section-subtitle">Recognition earned through excellence</p>
+    <div class="info-card achievement-card">
+      <div class="trophy-icon"><i class="fas fa-trophy"></i></div>
+      <div>
+        <h3>🏆 Hackathon Champion / Top Tech Finalist</h3>
+        <p>Recognized for building an end-to-end hardware-software IoT platform engineered to monitor real-time environmental data and dispatch automated alerts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Interactive Terminal Playground Section -->
+  <section id="terminal" class="section reveal">
+    <h2 class="section-title">Interactive Terminal</h2>
+    <p class="section-subtitle">Type 'help', 'skills', 'projects', 'about', or 'clear'</p>
+    
+    <div class="terminal-container">
+      <div class="terminal-header">
+        <div class="terminal-buttons">
+          <span class="term-btn red"></span>
+          <span class="term-btn yellow"></span>
+          <span class="term-btn green"></span>
+        </div>
+        <div class="terminal-title">benjie@pahamutang-dev:~</div>
+      </div>
+      <div class="terminal-body" id="terminalOutput">
+        <p class="term-line"><span class="term-green">benjie@portfolio:~$</span> Welcome! Type <span class="term-highlight">'help'</span> to view available commands.</p>
+      </div>
+      <div class="terminal-input-line">
+        <span class="term-green">benjie@portfolio:~$</span>
+        <input type="text" id="terminalInput" autofocus placeholder="Type command here..." autocomplete="off">
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Me Section -->
+  <section id="contact" class="section reveal">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="section-subtitle">Have a project or opportunity? Let's build together!</p>
+    
+    <div class="contact-box">
+      <form id="contact-form" class="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Your Full Name</label>
+          <div class="input-wrapper">
+            <i class="fas fa-user"></i>
+            <input type="text" id="name" placeholder="John Doe" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Your Email Address</label>
+          <div class="input-wrapper">
+            <i class="fas fa-envelope"></i>
+            <input type="email" id="email" placeholder="john@example.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject</label>
+          <div class="input-wrapper">
+            <i class="fas fa-tag"></i>
+            <input type="text" id="subject" placeholder="Project Inquiry / Hiring" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Message</label>
+          <div class="input-wrapper">
+            <i class="fas fa-comment-dots"></i>
+            <textarea id="message" rows="5" placeholder="Write your message here..." required></textarea>
+          </div>
+        </div>
+
+        <button type="submit" class="btn btn-primary btn-block" id="submitBtn">
+          <span>Send Message</span> <i class="fas fa-paper-plane"></i>
+        </button>
+        <div id="form-status" class="form-status"></div>
+      </form>
+
+      <div class="social-contact">
+        <h3>Contact Information</h3>
+        <p class="contact-info-item"><i class="fas fa-envelope"></i> <span>Email: <strong>pahamutangbenjie85@gmail.com</strong></span></p>
+        <p class="contact-info-item"><i class="fas fa-phone-alt"></i> <span>Phone: <strong>+63 997 294 7697</strong></span></p>
+        <p class="contact-info-item"><i class="fas fa-map-marker-alt"></i> <span>Location: <strong>Philippines</strong></span></p>
+
+        <h3 class="social-heading">Connect via Socials</h3>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/benjie-pahamutang-0a7001435/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Benjie-Pahamutang" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.facebook.com/ben.jie.136960" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+          <a href="https://x.com/luixied" target="_blank" rel="noopener noreferrer" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Back To Top Floating Button -->
+  <button id="backToTop" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2026 <strong>BENJIE B. PAHAMUTANG</strong> PORTFOLIO .</p>
+      <p class="footer-tagline">Engineered for High Performance, Scalability & Precision.</p>
+    </div>
+  </footer>
+
+  <!-- Core JavaScript Application Engine -->
+  <script src="script.js"></script>
+</body>
+</html>
